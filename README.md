@@ -24,6 +24,6 @@ This will be a JSON file, with the following features:
 
 See an instance of a simple example app in the file framework.json.
 
-It good be a best practice to provide the app with such a file, which I would nest inside the app folder.
+It could be a best practice to provide the app with such a file, which I would nest inside the app folder.
 Suggestions and comments are welcome.
 
