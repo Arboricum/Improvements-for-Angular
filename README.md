@@ -1,7 +1,7 @@
 # Improvements-for-Angular
 Proposal for a framework.json file in Angular applications
 
-It is really hard sometime to figure out all the relations between angular components, expecially when they become many.
+It is really hard sometime to figure out all the relationships between angular components, expecially when they become many.
 You'd want to know with a first glance who's child of who, or parents of who, or where a component is being used.
 Maybe you'd wish to know which service or directive is being shared.
 I found nothing on the web helping with this problem.
