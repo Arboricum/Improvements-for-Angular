@@ -20,7 +20,7 @@ This will be a JSON file, with the following features:
     - @Mod is an array of modules, elements are the modules' selector names (exact match).
 - same indentation -> siblings
 - different indentation -> lower is child of higher parent
-- first level: only parents (only children of <app-root> or of <rooter-outlet>)
+- first level: only parents (only children of <app-root> or of <router-outlet>)
 
 See an instance of a simple example app in the file framework.json.
 
