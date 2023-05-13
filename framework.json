@@ -1,11 +1,13 @@
 {
-	"LandingComponent": {},
+	"LandingComponent": {
+		"@Mod": ["app-routing"]
+	},
 	"HomeComponent": {
 		"@Mod": ["app-routing"],
 		"@Ser": ["ContentService"],
 		"@Dir": ["ChangeColor", "ChangeColorRen2"], 
-		"PicturesComponent": {},
-		"TextComponent": {
+		"FotoComponent": {},
+		"TestoComponent": {
 			"@Ser": ["ContentService"],
 			"@Dir": ["ChangeColorRen"]
 		}		
@@ -13,24 +15,21 @@
 	"ProjectsComponent": {
 		"@Mod": ["app-routing"],
 		"@Ser": ["ContentService"],
-		"ModelsComponent": {
+		"ModelliComponent": {
 			"@Dir": ["ChangeColor"]
 		}
 	},
 	"ContactsComponent": {
 		"@Mod": ["app-routing"]
 	},
-	"PricesComponent": {
+	"PrezziComponent": {
 		"@Mod": ["app-routing"],
-		"PicturesComponent": {},
+		"FotoComponent": {},
 		"ProjectsComponent": {
 			"@Ser": ["ContentService"],
-			"ModelsComponent": {
+			"ModelliComponent": {
 				"@Dir": ["ChangeColor"]
 			}
 		}
 	}
 }
-
-
-
