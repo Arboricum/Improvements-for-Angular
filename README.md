@@ -22,41 +22,7 @@ This will be a JSON file, with the following features:
 - different indentation -> lower is child of higher parent
 - first level: only parents (only children of <app-root> or of <rooter-outlet>)
 
-This is an instance of a simple example app:
-
-{
-	"LandingComponent": {},
-	"HomeComponent": {
-		"@Mod": ["app-routing"],
-		"@Ser": ["ContentService"],
-		"@Dir": ["ChangeColor", "ChangeColorRen2"], 
-		"PicturesComponent": {},
-		"TextComponent": {
-			"@Ser": ["ContentService"],
-			"@Dir": ["ChangeColorRen"]
-		}		
-	},
-	"ProjectsComponent": {
-		"@Mod": ["app-routing"],
-		"@Ser": ["ContentService"],
-		"ModelsComponent": {
-			"@Dir": ["ChangeColor"]
-		}
-	},
-	"ContactsComponent": {
-		"@Mod": ["app-routing"]
-	},
-	"PricesComponent": {
-		"@Mod": ["app-routing"],
-		"PicturesComponent": {},
-		"ProjectsComponent": {
-			"@Ser": ["ContentService"],
-			"ModelsComponent": {
-				"@Dir": ["ChangeColor"]
-			}
-		}
-	}
-}
+See an instance of a simple example app in the file framework.json.
 
 It good be a best practice to provide the app with such a file, which I would nest inside the app folder.
 Suggestions and comments are welcome.
