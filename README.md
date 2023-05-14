@@ -10,14 +10,15 @@ This will be a JSON file, with the following features:
 
 - Camel case string -> components' class name
 - Camel case string properties key-value -> it's for component, it's an object where the properties are:
-    - @string (see below), in the following order: modules (@Mod), services (@Ser), directives (@Dir);
+    - @string (see below), in the following order: modules (@Mod), services (@Ser), directives (@Dir), models (@Model);
     - camel case strings for children components' class names;
     - the object will be an empty one if there are no children or @string.
-- Camel case @string -> services (@Ser), directives (@Dir), modules (@Mod)
+- Camel case @string -> services (@Ser), directives (@Dir), modules (@Mod), models(@Model);
 - @string properties key-value -> 
     - @Ser is an array of services, elements are the services' class names (camel case);
     - @Dir is an array of directives, elements are the directives' class names (camel case);
     - @Mod is an array of modules, elements are the modules' selector names (exact match).
+    - @Model is an array of models, elements are the models' class names (camel case).
 - same indentation -> siblings
 - different indentation -> lower is child of higher parent
 - first level: only parents (only children of app-root or of router-outlet)
