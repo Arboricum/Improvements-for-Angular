@@ -1,34 +1,35 @@
 {
-	"LandingComponent": {
-        "@Mod": ["app-routing"]
-    },
-	"HomeComponent": {
-		"@Mod": ["app-routing"],
-		"@Ser": ["ContentService"],
-		"@Dir": ["ChangeColor", "ChangeColorRen2"], 
-		"PicturesComponent": {},
-		"TextComponent": {
-			"@Ser": ["ContentService"],
-			"@Dir": ["ChangeColorRen"]
-		}		
-	},
-	"ProjectsComponent": {
-		"@Mod": ["app-routing"],
-		"@Ser": ["ContentService"],
-		"ModelsComponent": {
-			"@Dir": ["ChangeColor"]
-		}
-	},
-	"ContactsComponent": {
-		"@Mod": ["app-routing"]
-	},
-	"PricesComponent": {
-		"@Mod": ["app-routing"],
-		"PicturesComponent": {},
-		"ProjectsComponent": {
-			"@Ser": ["ContentService"],
-			"ModelsComponent": {
-				"@Dir": ["ChangeColor"]
+	"AppComponent": {
+		"HeaderComponent": {},
+		"@router-outlet": {
+			"RecipeComponent": {
+				"@Ser": ["RecipeService"],
+				"RecipeListComponent": {
+					"@Ser": ["RecipeService"],
+					"@Model": ["Recipe"],
+					"RecipeItemComponent": {
+						"@Model": ["Recipe"]
+					}
+				},
+				"@router-outlet": {
+					"RecipeStartComponent": {},
+					"RecipeEditComponent": {
+						"@Ser": ["RecipeService"]
+					},
+					"RecipeDetailComponent": {
+						"@Ser": ["RecipeService"],
+						"@Dir": ["DropdownDirective"],
+						"@Model": ["Recipe"]
+					}
+				}
+			},
+			"ShoppingListComponent": {
+				"@Ser": ["ShoppingListService"],
+				"@Model": ["Ingredient"],
+				"ShoppingEditComponent": {
+					"@Ser": ["ShoppingListService"],
+					"@Model": ["Ingredient"]
+				}
 			}
 		}
 	}
